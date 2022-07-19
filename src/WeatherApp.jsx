@@ -1,10 +1,12 @@
 import React from "react";
 import "./WeatherApp.css";
+import SearchForm from "./SearchForm";
 
 export default function WeatherApp() {
   return (
     <div>
       <div className="container WeatherApp">
+        <SearchForm />
         <h1>Paris</h1>
         <ul>
           <li>Tuesday 16:55</li>

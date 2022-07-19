@@ -11,6 +11,10 @@
     padding: 0;
 }
 
+.WeatherApp .form {
+    margin-bottom: 20px;
+}
+
 .WeatherApp .weatherIcon {
     height: 76px;
     padding-right: 10px;
