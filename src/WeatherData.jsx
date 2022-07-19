@@ -2,6 +2,7 @@ import React from "react";
 import SearchLocationTime from "./SearchLocationTime";
 import FormattedSunTime from "./FormattedSunTime";
 import TemperatureConvertion from "./TemperatureConvertion";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherData(props) {
   const localTimezoneOffset = new Date().getTimezoneOffset() * -60 * 1000;
@@ -24,11 +25,7 @@ export default function WeatherData(props) {
       <div className="row">
         <div className="col-6">
           <div className="clearfix">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-              alt="Clear Sky"
-              className="weatherIcon float-start"
-            />
+            <WeatherIcon code={props.weather.icon} />
             <TemperatureConvertion
               celsius={Math.round(props.weather.temperature)}
               fahrenheit={(props.weather.temperature * 9) / 5 + 32}

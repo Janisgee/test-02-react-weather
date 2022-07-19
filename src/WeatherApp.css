@@ -20,9 +20,10 @@
     margin-bottom: 20px;
 }
 
-.WeatherApp .weatherIcon {
-    height: 76px;
+.WeatherApp canvas {
+    height: 75px;
     padding-right: 10px;
+    float: left;
 }
 
 .WeatherApp .temperature {

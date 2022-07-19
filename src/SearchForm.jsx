@@ -16,6 +16,7 @@ export default function SearchForm(props) {
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
+      icon: response.data.weather[0].icon,
       time: new Date(response.data.dt * 1000),
       timezone: response.data.timezone * 1000,
       sunrise: response.data.sys.sunrise * 1000,
