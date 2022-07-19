@@ -9,6 +9,11 @@
 .WeatherApp ul {
     list-style: none;
     padding: 0;
+    color: #6a6767;
+}
+
+.WeatherApp h1 {
+    font-weight: 700;
 }
 
 .WeatherApp .form {
@@ -28,4 +33,12 @@
 .WeatherApp .unit {
     font-size: 26px;
     font-weight: 600;
+}
+
+.WeatherApp .unit .inactive {
+    font-size: 20px;
+}
+
+.WeatherApp .unit a {
+    text-decoration: none;
 }
